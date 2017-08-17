@@ -9,7 +9,7 @@ using System.Windows.Forms;
  * Date: August 17, 2017
  * Student ID: 300923159
  * Description: This is the Program Class for the PickH
- * Version: 0.1  - Created Program Class
+ * Version: 0.2  - Changed the Application.Run method in Program to start SplashForm first. 
  */
 
 namespace COMP123_S2017_FinalExam_StudentID
@@ -24,7 +24,7 @@ namespace COMP123_S2017_FinalExam_StudentID
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PickHighestCardForm());
+            Application.Run(new SplashForm());
         }
     }
 }
