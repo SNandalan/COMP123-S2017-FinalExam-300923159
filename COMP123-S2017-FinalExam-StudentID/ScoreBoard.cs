@@ -84,7 +84,7 @@ namespace COMP123_S2017_FinalExam_StudentID
         }
 
         // CONSTRUCTOR
-        ScoreBoard(TextBox scoreTextBox, TextBox timeTextBox, TextBox finalScoreTextBox)
+        public ScoreBoard(TextBox scoreTextBox, TextBox timeTextBox, TextBox finalScoreTextBox)
         {
             this._scoreTextBox = scoreTextBox;
             this._timeTextBox = timeTextBox;

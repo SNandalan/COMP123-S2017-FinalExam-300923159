@@ -15,7 +15,7 @@ using System.Windows.Forms;
  * Date: August 17, 2017
  * Student ID: 300923159
  * Description: This is the PickHighestCard Form
- * Version: 0.1  - Created PickHighestCard Form
+ * Version: 0.2  - Instantiated the ScoreBoard object in PickHighestCardForm. 
  */
 
 namespace COMP123_S2017_FinalExam_StudentID
@@ -236,7 +236,7 @@ namespace COMP123_S2017_FinalExam_StudentID
         private void PickHighestCardForm_Load(object sender, EventArgs e)
         {
             // Initialize ScoreBoard HERE
-
+            ScoreBoard scoreboard = new ScoreBoard(ScoreTextBox, TimeTextBox, FinalScoreTextBox);
             // Initialize the App Sounds
             this._buildDealtCardPictureBoxList();
             this._reset();
