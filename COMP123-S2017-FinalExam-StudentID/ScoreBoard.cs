@@ -9,7 +9,7 @@ using System.Windows.Forms;
 * Date: August 17, 2017
 * Student ID: 300923159
 * Description: This is ScoreBoard class. 
-* Version: 0.2  - Created the class. 
+* Version: 0.2  - Added Constructor and UpdateTime method
 */
 namespace COMP123_S2017_FinalExam_StudentID
 {
@@ -43,9 +43,9 @@ namespace COMP123_S2017_FinalExam_StudentID
             }
             set
             {
-
-                ScoreTextBox.Text = Convert.ToString(_score);
-                FinalScoreTextBox.Text = Convert.ToString(_score);
+                _score = value;
+                ScoreTextBox.Text = Convert.ToString(this._score);
+                FinalScoreTextBox.Text = Convert.ToString(this._score);
             }
         }
         public TextBox ScoreTextBox
@@ -81,6 +81,22 @@ namespace COMP123_S2017_FinalExam_StudentID
             {
                 _timeTextBox = value;
             }
+        }
+
+        // CONSTRUCTOR
+        ScoreBoard(TextBox scoreTextBox, TextBox timeTextBox, TextBox finalScoreTextBox)
+        {
+            this._scoreTextBox = scoreTextBox;
+            this._timeTextBox = timeTextBox;
+            this._finalScoreTextBox = finalScoreTextBox;
+        }
+
+        //PUBLIC METHODS
+        public void UpdateTime()
+        {
+            Time = Convert.ToInt32(Time);
+            Time -= 1;
+            TimeTextBox.Text = Convert.ToString(Time);
         }
     }
 }
