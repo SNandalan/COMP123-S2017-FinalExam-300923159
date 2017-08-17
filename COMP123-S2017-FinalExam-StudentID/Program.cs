@@ -8,7 +8,7 @@ using System.Windows.Forms;
  * Name: Sushmita Nandalan
  * Date: August 17, 2017
  * Student ID: 300923159
- * Description: This is the Program Class for the PickH
+ * Description: This is the Program Class for the PickHighestCardForm
  * Version: 0.2  - Changed the Application.Run method in Program to start SplashForm first. 
  */
 
