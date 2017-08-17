@@ -4,12 +4,18 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/* 
+ * Name: Sushmita Nandalan
+ * Date: August 17, 2017
+ * Student ID: 300923159
+ * Description: This is the Program Class for the PickH
+ * Version: 0.1  - Created Program Class
+ */
+
 namespace COMP123_S2017_FinalExam_StudentID
 {
     public static class Program
     {
-        public static PickHighestCardForm pickHighestCardForm;
-
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -18,10 +24,7 @@ namespace COMP123_S2017_FinalExam_StudentID
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            pickHighestCardForm = new PickHighestCardForm();
-
-            Application.Run(new SplashForm());
+            Application.Run(new PickHighestCardForm());
         }
     }
 }
